@@ -1,0 +1,128 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>VastoPS - Growtopia Private Server</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: linear-gradient(120deg, #1e1e2f, #2a2a40);
+      color: #ffffff;
+      margin: 0;
+      padding: 0;
+    }
+    header {
+      background-color: #292945;
+      padding: 20px;
+      text-align: center;
+      box-shadow: 0 4px 10px rgba(0, 0, 0, 0.3);
+    }
+    header h1 {
+      font-size: 2.5rem;
+      color: #f7d354;
+    }
+    nav {
+      display: flex;
+      justify-content: center;
+      background-color: #1c1c2b;
+      padding: 10px;
+    }
+    nav a {
+      margin: 0 15px;
+      text-decoration: none;
+      color: #f7d354;
+      font-weight: bold;
+    }
+    nav a:hover {
+      color: #ffffff;
+    }
+    .container {
+      padding: 30px;
+      max-width: 800px;
+      margin: auto;
+      background-color: #202030;
+      border-radius: 15px;
+      box-shadow: 0 0 15px rgba(0,0,0,0.5);
+    }
+    .section-title {
+      font-size: 1.8rem;
+      color: #f7d354;
+      margin-bottom: 10px;
+    }
+    .download-btn {
+      background-color: #f7d354;
+      color: #1c1c2b;
+      padding: 10px 20px;
+      font-size: 1.1rem;
+      border: none;
+      border-radius: 10px;
+      cursor: pointer;
+      margin-top: 15px;
+    }
+    .download-btn:hover {
+      background-color: #fff36b;
+    }
+    .server-status {
+      padding: 15px;
+      border: 2px solid #f7d354;
+      border-radius: 10px;
+      background-color: #1c1c2b;
+    }
+    footer {
+      margin-top: 30px;
+      text-align: center;
+      font-size: 0.9rem;
+      color: #aaa;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>VastoPS</h1>
+    <p>Selamat datang di dunia Growtopia Private Server terbaik!</p>
+  </header>
+
+  <nav>
+    <a href="#download">Download</a>
+    <a href="#info">Informasi Server</a>
+  </nav>
+
+  <div class="container">
+    <section id="download">
+      <h2 class="section-title">Download Launcher</h2>
+      <p>Unduh launcher VastoPS dan rasakan pengalaman bermain tanpa batas!</p>
+      <button class="download-btn" onclick="alert('Fitur download belum aktif')">Download Sekarang</button>
+    </section>
+
+    <hr style="margin: 30px 0; border-color: #444;" />
+
+    <section id="info">
+      <h2 class="section-title">Informasi Server</h2>
+      <div class="server-status">
+        <p><strong>Status Server:</strong> <span id="status">Sedang Mengecek...</span></p>
+        <p><strong>IP:</strong> 127.0.0.1</p>
+        <p><strong>Port:</strong> 17002</p>
+      </div>
+    </section>
+  </div>
+
+  <footer>
+    <p>&copy; 2025 VastoPS - Growtopia Private Server Indonesia</p>
+  </footer>
+
+  <script>
+    // Simulasi status server (bisa dihubungkan ke server backend untuk real-time)
+    const statusEl = document.getElementById('status');
+    const serverOnline = true; // Ubah manual jika ingin OFF
+
+    if(serverOnline){
+      statusEl.innerText = '🟢 Online';
+      statusEl.style.color = '#00ff00';
+    } else {
+      statusEl.innerText = '🔴 Offline';
+      statusEl.style.color = '#ff4040';
+    }
+  </script>
+</body>
+</html>
